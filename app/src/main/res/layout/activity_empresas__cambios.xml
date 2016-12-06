@@ -1,0 +1,348 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg2"
+    tools:context="com.example.admonunidadeseconomicas.Empresas_Cambios" >
+
+    <ScrollView
+       android:id="@+id/scroll"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true" >
+    
+    <TextView
+        android:id="@+id/empresasCambiosTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <Spinner
+        android:id="@+id/empresasCambiosListadoSect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosRazonS" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    <Spinner
+        android:id="@+id/empresasCambiosListadoSubS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosListadoSect" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    
+    <Spinner
+        android:id="@+id/empresasCambiosListadoRama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosListadoSubS" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    <Spinner
+        android:id="@+id/empresasCambiosListadoSubR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosListadoRama" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+      <Spinner
+        android:id="@+id/empresasCambiosListadoClases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosListadoSubR" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+
+    <EditText
+        android:id="@+id/empresasCambiosRazonS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/empresasCambiosNombre"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosNombre"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Razon Social" />
+    
+    <EditText
+        android:id="@+id/empresasCambiosNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosTitulo"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Nombre de la Clase" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasCambiosRangoEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosListadoClases"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Rango de Empleados" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasCambiosTipoVial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosRangoEmp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Tipo de Vialidad" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasCambiosNombreVial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosTipoVial"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Nombre de Vialidad" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasCambiosNumExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosNombreVial"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Numero Exterior" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasCambiosNumeroLI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosNumExt"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Numero o Letra Interior" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasCambiosTipoAs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosNumeroLI"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Tipo de Asentamiento" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasCambiosNombreAs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosTipoAs"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Nombre de Asentamiento" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasCambiosCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosNombreAs"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Codigo Postal" >
+    </EditText>
+    
+    <Spinner
+        android:id="@+id/empresasCambiosListadoEstados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosCP" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    <Spinner
+        android:id="@+id/empresasCambiosListadoMunicipios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosListadoEstados" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    <EditText
+        android:id="@+id/empresasCambiosTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosListadoMunicipios"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Telefono" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasCambiosEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosTel"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Email" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasCambiosWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosEmail"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Web" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasCambiosTipoUn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosWeb"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Tipo de Unidad Economica" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasCambiosLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosTipoUn"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Latitud" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasCambiosLon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosLat"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Longitud" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasCambiosFechaInc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosLon"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Fecha de Incorporacion" >
+    </EditText>
+
+    <Button
+        android:id="@+id/empresasCambiosGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosFechaInc"
+        android:gravity="center_horizontal"
+        android:text="@string/subsectoresAltaGuardar" />
+
+    <Button
+        android:id="@+id/empresasCambiosCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasCambiosGuardar"
+        android:text="@string/subsectoresAltasCancelar" />
+    
+        </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

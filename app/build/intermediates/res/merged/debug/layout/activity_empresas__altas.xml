@@ -1,0 +1,350 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg2"
+    tools:context="com.example.admonunidadeseconomicas.Empresas_Altas" >
+
+    <ScrollView
+       android:id="@+id/scroll"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true" >
+    
+    <TextView
+        android:id="@+id/empresasAltasTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <Spinner
+        android:id="@+id/empresasAltaListadoSect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaRazonS" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    <Spinner
+        android:id="@+id/empresasAltaListadoSubS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaListadoSect" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    
+    <Spinner
+        android:id="@+id/empresasAltaListadoRama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaListadoSubS" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    <Spinner
+        android:id="@+id/empresasAltaListadoSubR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaListadoRama" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+
+    
+    <Spinner
+        android:id="@+id/empresasAltaListadoClases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaListadoSubR" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+   
+    <EditText
+        android:id="@+id/empresasAltaRazonS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/empresasAltaNombre"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaNombre"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Razon Social" />
+    
+    <EditText
+        android:id="@+id/empresasAltaNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaTitulo"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Nombre de la Empresa" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasAltaRangoEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaListadoClases"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Rango de Empleados" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasAltaTipoVial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaRangoEmp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Tipo de Vialidad" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasAltaNombreVial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaTipoVial"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Nombre de Vialidad" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasAltaNumExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaNombreVial"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Numero Exterior" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasAltaNumeroLI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaNumExt"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Numero o Letra Interior" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasAltaTipoAs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaNumeroLI"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Tipo de Asentamiento" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasAltaNombreAs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaTipoAs"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Nombre de Asentamiento" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasAltaCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaNombreAs"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Codigo Postal" >
+    </EditText>
+    
+    <Spinner
+        android:id="@+id/empresasAltaListadoEstados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaCP" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    <Spinner
+        android:id="@+id/empresasAltaListadoMunicipios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaListadoEstados" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    
+    <EditText
+        android:id="@+id/empresasAltaTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaListadoMunicipios"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Telefono" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasAltaEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaTel"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Email" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasAltaWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaEmail"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Web" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasAltaTipoUn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaWeb"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Tipo de Unidad Economica" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasAltaLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaTipoUn"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Latitud" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasAltaLon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaLat"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Longitud" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/empresasAltaFechaInc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaLon"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Fecha de Incorporacion" >
+    </EditText>
+
+    <Button
+        android:id="@+id/empresasAltaGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaFechaInc"
+        android:gravity="center_horizontal"
+        android:text="@string/subsectoresAltaGuardar" />
+
+    <Button
+        android:id="@+id/empresasAltaCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/empresasAltaGuardar"
+        android:text="@string/subsectoresAltasCancelar" />
+    
+        </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

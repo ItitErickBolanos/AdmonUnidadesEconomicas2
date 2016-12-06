@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admonunidadeseconomicas.Clases_List"
+    android:background="@drawable/bg2">
+
+    <ScrollView
+       android:id="@+id/scroll"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true" >
+    
+    
+    <TextView
+        android:id="@+id/headerClasesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="LISTA DE CLASES"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" 
+        android:gravity="center"/>
+
+    <ListView
+        android:id="@+id/ClasesListado"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headerClasesList" >
+
+    </ListView>
+
+    <Spinner
+        android:id="@+id/sectoresSpinClase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headerClasesTitle"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000" />
+    
+    <Spinner
+        android:id="@+id/ramasSpinClase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/subsectoresSpinClase"
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000" />
+    
+    <Spinner
+        android:id="@+id/subRamasSpinClase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ramasSpinClase"
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000" />
+
+    <TextView
+        android:id="@+id/headerClasesList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/subRamasSpinClase"
+        android:gravity="center"
+        android:textColor="#FFFFFF" />
+
+    <Spinner
+        android:id="@+id/subsectoresSpinClase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sectoresSpinClase"
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000" />
+    
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

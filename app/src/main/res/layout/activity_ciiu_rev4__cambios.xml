@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg2"
+    tools:context="com.example.admonunidadeseconomicas.CiiuRev4_Cambios" >
+
+    <ScrollView
+       android:id="@+id/scroll"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true" >
+    
+    <TextView
+        android:id="@+id/CiiuRev4CambiosTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <Spinner
+        android:id="@+id/CiiuRev4CambiosListadoSect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev4CambiosTitulo" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    <Spinner
+        android:id="@+id/CiiuRev4CambiosListadoSubS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev4CambiosListadoSect" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    
+    <Spinner
+        android:id="@+id/CiiuRev4CambiosListadoRama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev4CambiosListadoSubS" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    <Spinner
+        android:id="@+id/CiiuRev4CambiosListadoSubR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev4CambiosListadoRama" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    <Spinner
+        android:id="@+id/CiiuRev4CambiosListadoClases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev4CambiosListadoSubR" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+
+    <EditText
+        android:id="@+id/CiiuRev4CambiosCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CiiuRev4CambiosNombre"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev4CambiosListadoClases"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Codigo Ciiu Rev4" />
+
+    <Button
+        android:id="@+id/CiiuRev4CambiosGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev4CambiosNombre"
+        android:gravity="center_horizontal"
+        android:text="@string/subsectoresAltaGuardar" />
+
+    <Button
+        android:id="@+id/CiiuRev4CambiosCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev4CambiosGuardar"
+        android:text="@string/subsectoresAltasCancelar" />
+
+    <EditText
+        android:id="@+id/CiiuRev4CambiosNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev4CambiosCodigo"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Nombre de la Clase" >
+
+        <requestFocus />
+    </EditText>
+    
+        </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

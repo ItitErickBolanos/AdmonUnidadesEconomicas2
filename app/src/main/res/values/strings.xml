@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AdmonUnidadesEconomicas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- MainActivity Strings -->
+    <string name="strTituloIngresar">Iniciar Sesion</string>
+    <string name="strTVUsuario">Usuario</string>
+    <string name="strTVPassword">Password</string>
+    <string name="strbtnIngresar">Ingresar</string>
+    <string name="strTituloIniciarSesion">Iniciar Sesion</string>
+    <string name="hintUsuario">Usuario o Email</string>
+    <string name="hintContrasena">Contraseña</string>
+    <string name="strBtnIngresar">Ingresar</string>
+    <string name="title_activity_menu_inicio">MenuInicio</string>
+
+    <!-- MenuInicio Activity String -->
+    <string name="menuSalir">Salir del Sistema</string>
+    <string name="menuCerrarSesion">Cerrar Session</string>
+    <string name="menuAcercade">Acerca de</string>
+    <string name="menuEstadoServer">Estado del Servidor</string>
+    <string name="title_activity_usuarios_abc">UsuariosABC</string>
+    <string name="title_activity_proyectos_abc">ProyectosABC</string>
+    <string name="title_activity_sectores__abc">Sectores_ABC</string>
+    <string name="title_activity_empresas__abc">Empresas_ABC</string>
+    <string name="title_activity_scian__abc">Scian_ABC</string>
+    <string name="title_activity_ciiur4__abc">CIIUR4_ABC</string>
+    <string name="title_activity_ciiur3">CIIUR3</string>
+    <string name="title_activity_ciiur2__abc">CIIUR2_ABC</string>
+    <string name="title_activity_ciiur2__altas">CIIUR2_Altas</string>
+    <string name="title_activity_ciiur2__cambios">CIIUR2_Cambios</string>
+    <string name="title_activity_ciiur2__consultas">CIIUR2_Consultas</string>
+    <string name="title_activity_ciiur3__altas">CIIUR3_Altas</string>
+    <string name="title_activity_ciiur3__cambios">CIIUR3_Cambios</string>
+    <string name="title_activity_ciiur3__consultas">CIIUR3_Consultas</string>
+    <string name="title_activity_ciiur4__altas">CIIUR4_Altas</string>
+    <string name="title_activity_ciiur4__cambios">CIIUR4_Cambios</string>
+    <string name="title_activity_ciiur4__consultas">CIIUR4_Consultas</string>
+    <string name="title_activity_scian__altas">Scian_Altas</string>
+    <string name="title_activity_scian__cambios">Scian_Cambios</string>
+    <string name="title_activity_scian__consultas">Scian_Consultas</string>
+    <string name="title_activity_empresas__altas">Empresas_Altas</string>
+    <string name="title_activity_empresas__cambios">Empresas_Cambios</string>
+    <string name="title_activity_empresas__consultas">Empresas_Consultas</string>
+    <string name="title_activity_menu_princpal">MenuPrincpal</string>
+    <string name="menuAppInformacionSistema">Informacion del Sistema</string>
+    <string name="menuAppCerrarSesion">Cerrar Sesion</string>
+    <string name="menuAppEstadoServidor">Estado del Servidor</string>
+    <string name="menuAppSalir">Salir del Sistema</string>
+    <string name="title_activity_sub_sectores__abc">SubSectores_ABC</string>
+    <string name="title_activity_ramas__abc">Ramas_ABC</string>
+    <string name="title_activity_sub_ramas__abc">SubRamas_ABC</string>
+    <string name="title_activity_clases__abc">Clases_ABC</string>
+    <string name="title_activity_usuarios__abc">Usuarios_ABC</string>
+    <string name="title_activity_proyectos__abc">Proyectos_ABC</string>
+    <string name="title_activity_ciiur3__abc">CIIUR3_ABC</string>
+    <string name="title_activity_sectores__alta">Sectores_Alta</string>
+    <string name="sectoresAltaCodigo">Codigo de Sector</string>
+    <string name="sectoresAltaNombre">Nombre del Sector</string>
+    <string name="sectoresAltaGuardar">Guardar</string>
+    <string name="sectoresAltaCancelar">Cancelar</string>
+    <string name="title_activity_sectores__cambios">Sectores_Cambios</string>
+    <string name="title_activity_sectores__cambios_abc">Sectores_CambiosABC</string>
+    <string name="title_activity_sectores__list">Sectores_List</string>
+    <string name="title_activity_sub_sectores__alta">SubSectores_Alta</string>
+    <string name="title_activity_sub_sectores__altas">SubSectores_Altas</string>
+    <string name="subsectoresAltaCodigo">Codigo del SubSector</string>
+    <string name="subsectoresAltaNombre">Nombre de SubSector</string>
+    <string name="subsectoresAltaGuardar">Guardar</string>
+    <string name="subsectoresAltasCancelar">Cancelar</string>
+    <string name="title_activity_sub_sectores__list">SubSectores_List</string>
+    <string name="title_activity_sub_sectores__cambios">SubSectores_Cambios</string>
+    <string name="title_activity_ramas__list">Ramas_List</string>
+    <string name="title_activity_ramas__altas">Ramas_Altas</string>
+    <string name="title_activity_ramas__cambios">Ramas_Cambios</string>
+    <string name="title_activity_sub_rama__list">SubRama_List</string>
+    <string name="title_activity_sub_rama__altas">SubRama_Altas</string>
+    <string name="title_activity_sub_rama__cambios">SubRama_Cambios</string>
+    <string name="title_activity_clases__list">Clases_List</string>
+    <string name="title_activity_clases__altas">Clases_Altas</string>
+    <string name="title_activity_clases__cambios">Clases_Cambios</string>
+    <string name="title_activity_ciiu_rev4__list">CiiuRev4_List</string>
+    <string name="title_activity_ciiu_rev4__altas">CiiuRev4_Altas</string>
+    <string name="title_activity_ciiu_rev4__cambios">CiiuRev4_Cambios</string>
+    <string name="title_activity_ciiu_rev3__list">CiiuRev3_List</string>
+    <string name="title_activity_ciiu_rev3__altas">CiiuRev3_Altas</string>
+    <string name="title_activity_ciiu_rev3__cambios">CiiuRev3_Cambios</string>
+    <string name="title_activity_ciiu_rev2__list">CiiuRev2_List</string>
+    <string name="title_activity_ciiu_rev2__altas">CiiuRev2_Altas</string>
+    <string name="title_activity_ciiu_rev2__cambios">CiiuRev2_Cambios</string>
+    <string name="title_activity_proyectos__list">Proyectos_List</string>
+    <string name="title_activity_proyectos__altas">Proyectos_Altas</string>
+    <string name="title_activity_proyectos__cambios">Proyectos_Cambios</string>
+    <string name="title_activity_empresas__mapa">Empresas_Mapa</string>
+    <string name="title_activity_empresas__list">Empresas_List</string>
+
+</resources>

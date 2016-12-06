@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg2"
+    tools:context="com.example.admonunidadeseconomicas.CiiuRev2_Altas" >
+
+    <ScrollView
+       android:id="@+id/scroll"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true" >
+    
+    <TextView
+        android:id="@+id/CiiuRev2AltasTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <Spinner
+        android:id="@+id/CiiuRev2AltaListadoSect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev2AltasTitulo" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    <Spinner
+        android:id="@+id/CiiuRev2AltaListadoSubS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev2AltaListadoSect" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    
+    <Spinner
+        android:id="@+id/CiiuRev2AltaListadoRama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev2AltaListadoSubS" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    <Spinner
+        android:id="@+id/CiiuRev2AltaListadoSubR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev2AltaListadoRama" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+    <Spinner
+        android:id="@+id/CiiuRev2AltaListadoClases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev2AltaListadoSubR" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+    
+     <Spinner
+        android:id="@+id/CiiuRev2AltaListadoCR4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev2AltaListadoClases" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+     
+     <Spinner
+        android:id="@+id/CiiuRev2AltaListadoCR3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev2AltaListadoCR4" 
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000"/>
+
+    <EditText
+        android:id="@+id/CiiuRev2AltaCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CiiuRev2AltaNombre"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev2AltaListadoCR3"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Codigo Ciiu Rev2" />
+
+    <Button
+        android:id="@+id/CiiuRev2AltaGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev2AltaNombre"
+        android:gravity="center_horizontal"
+        android:text="@string/subsectoresAltaGuardar" />
+
+    <Button
+        android:id="@+id/CiiuRev2AltaCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev2AltaGuardar"
+        android:text="@string/subsectoresAltasCancelar" />
+
+    <EditText
+        android:id="@+id/CiiuRev2AltaNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CiiuRev2AltaCodigo"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Nombre de la Clase" >
+
+        <requestFocus />
+    </EditText>
+    
+        </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

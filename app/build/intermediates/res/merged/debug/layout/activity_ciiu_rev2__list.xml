@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admonunidadeseconomicas.CiiuRev2_List"
+    android:background="@drawable/bg2">
+
+    <ScrollView
+       android:id="@+id/scroll"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true" >
+    
+    
+    <TextView
+        android:id="@+id/headerCiiuRev2Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="LISTA CiiuRev2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" 
+        android:gravity="center"/>
+
+    <ListView
+        android:id="@+id/CiiuRev2Listado"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headerCiiuRev2List" >
+
+    </ListView>
+
+    <Spinner
+        android:id="@+id/sectoresSpinCiiuRev2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headerCiiuRev2Title"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000" />
+    
+    <Spinner
+        android:id="@+id/ramasSpinCiiuRev2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/subsectoresSpinCiiuRev2"
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000" />
+    
+    <Spinner
+        android:id="@+id/subRamasSpinCiiuRev2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ramasSpinCiiuRev2"
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000" />
+    
+    <Spinner
+        android:id="@+id/clasesSpinCiiuRev2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/subRamasSpinCiiuRev2"
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000" />
+    
+    <Spinner
+        android:id="@+id/ciiuRev4SpinCiiuRev2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/clasesSpinCiiuRev2"
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000" />
+    
+    <Spinner
+        android:id="@+id/ciiuRev3SpinCiiuRev2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ciiuRev4SpinCiiuRev2"
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000" />
+
+    <TextView
+        android:id="@+id/headerCiiuRev2List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ciiuRev3SpinCiiuRev2"
+        android:gravity="center"
+        android:textColor="#FFFFFF" />
+
+    <Spinner
+        android:id="@+id/subsectoresSpinCiiuRev2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sectoresSpinCiiuRev2"
+        android:background="@drawable/bgspinner"
+        android:popupBackground="#000000" />
+    
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

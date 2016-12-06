@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admonunidadeseconomicas"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBfsFx8Qxk6rPrLh7B4_u4KzV4-l0aTKLc" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuPrincpal"
+            android:label="@string/title_activity_menu_princpal" >
+        </activity>
+        <activity
+            android:name=".Scian_ABC"
+            android:label="@string/title_activity_scian__abc" >
+        </activity>
+        <activity
+            android:name=".Sectores_ABC"
+            android:label="@string/title_activity_sectores__abc" >
+        </activity>
+        <activity
+            android:name=".SubSectores_ABC"
+            android:label="@string/title_activity_sub_sectores__abc" >
+        </activity>
+        <activity
+            android:name=".Ramas_ABC"
+            android:label="@string/title_activity_ramas__abc" >
+        </activity>
+        <activity
+            android:name=".SubRamas_ABC"
+            android:label="@string/title_activity_sub_ramas__abc" >
+        </activity>
+        <activity
+            android:name=".Clases_ABC"
+            android:label="@string/title_activity_clases__abc" >
+        </activity>
+        <activity
+            android:name=".Usuarios_ABC"
+            android:label="@string/title_activity_usuarios__abc" >
+        </activity>
+        <activity
+            android:name=".Proyectos_ABC"
+            android:label="@string/title_activity_proyectos__abc" >
+        </activity>
+        <activity
+            android:name=".Empresas_ABC"
+            android:label="@string/title_activity_empresas__abc" >
+        </activity>
+        <activity
+            android:name=".CIIUR4_ABC"
+            android:label="@string/title_activity_ciiur4__abc" >
+        </activity>
+        <activity
+            android:name=".CIIUR3_ABC"
+            android:label="@string/title_activity_ciiur3__abc" >
+        </activity>
+        <activity
+            android:name=".CIIUR2_ABC"
+            android:label="@string/title_activity_ciiur2__abc" >
+        </activity>
+        <activity
+            android:name=".Sectores_Alta"
+            android:label="@string/title_activity_sectores__alta" >
+        </activity>
+        <activity
+            android:name=".Sectores_Cambios"
+            android:label="@string/title_activity_sectores__cambios" >
+        </activity>
+        <activity
+            android:name=".Sectores_CambiosABC"
+            android:label="@string/title_activity_sectores__cambios_abc" >
+        </activity>
+        <activity
+            android:name=".Sectores_List"
+            android:label="@string/title_activity_sectores__list" >
+        </activity>
+        <activity
+            android:name=".SubSectores_Alta"
+            android:label="@string/title_activity_sub_sectores__alta" >
+        </activity>
+        <activity
+            android:name=".SubSectores_Altas"
+            android:label="@string/title_activity_sub_sectores__altas" >
+        </activity>
+        <activity
+            android:name=".SubSectores_List"
+            android:label="@string/title_activity_sub_sectores__list" >
+        </activity>
+        <activity
+            android:name=".SubSectores_Cambios"
+            android:label="@string/title_activity_sub_sectores__cambios" >
+        </activity>
+        <activity
+            android:name=".Ramas_List"
+            android:label="@string/title_activity_ramas__list" >
+        </activity>
+        <activity
+            android:name=".Ramas_Altas"
+            android:label="@string/title_activity_ramas__altas" >
+        </activity>
+        <activity
+            android:name=".Ramas_Cambios"
+            android:label="@string/title_activity_ramas__cambios" >
+        </activity>
+        <activity
+            android:name=".SubRamas_List"
+            android:label="@string/title_activity_sub_rama__list" >
+        </activity>
+        <activity
+            android:name=".SubRamas_Altas"
+            android:label="@string/title_activity_sub_rama__altas" >
+        </activity>
+        <activity
+            android:name=".SubRamas_Cambios"
+            android:label="@string/title_activity_sub_rama__cambios" >
+        </activity>
+        <activity
+            android:name=".Clases_List"
+            android:label="@string/title_activity_clases__list" >
+        </activity>
+        <activity
+            android:name=".Clases_Altas"
+            android:label="@string/title_activity_clases__altas" >
+        </activity>
+        <activity
+            android:name=".Clases_Cambios"
+            android:label="@string/title_activity_clases__cambios" >
+        </activity>
+        <activity
+            android:name=".CiiuRev4_List"
+            android:label="@string/title_activity_ciiu_rev4__list" >
+        </activity>
+        <activity
+            android:name=".CiiuRev4_Altas"
+            android:label="@string/title_activity_ciiu_rev4__altas" >
+        </activity>
+        <activity
+            android:name=".CiiuRev4_Cambios"
+            android:label="@string/title_activity_ciiu_rev4__cambios" >
+        </activity>
+        <activity
+            android:name=".CiiuRev3_List"
+            android:label="@string/title_activity_ciiu_rev3__list" >
+        </activity>
+        <activity
+            android:name=".CiiuRev3_Altas"
+            android:label="@string/title_activity_ciiu_rev3__altas" >
+        </activity>
+        <activity
+            android:name=".CiiuRev3_Cambios"
+            android:label="@string/title_activity_ciiu_rev3__cambios" >
+        </activity>
+        <activity
+            android:name=".CiiuRev2_List"
+            android:label="@string/title_activity_ciiu_rev2__list" >
+        </activity>
+        <activity
+            android:name=".CiiuRev2_Altas"
+            android:label="@string/title_activity_ciiu_rev2__altas" >
+        </activity>
+        <activity
+            android:name=".CiiuRev2_Cambios"
+            android:label="@string/title_activity_ciiu_rev2__cambios" >
+        </activity>
+        <activity
+            android:name=".Proyectos_List"
+            android:label="@string/title_activity_proyectos__list" >
+        </activity>
+        <activity
+            android:name=".Proyectos_Altas"
+            android:label="@string/title_activity_proyectos__altas" >
+        </activity>
+        <activity
+            android:name=".Proyectos_Cambios"
+            android:label="@string/title_activity_proyectos__cambios" >
+        </activity>
+        <activity
+            android:name=".Empresas_Mapa"
+            android:label="@string/title_activity_empresas__mapa" >
+        </activity>
+        <activity
+            android:name=".Empresas_List"
+            android:label="@string/title_activity_empresas__list" >
+        </activity>
+        <activity
+            android:name=".Empresas_Cambios"
+            android:label="@string/title_activity_empresas__cambios" >
+        </activity>
+        <activity
+            android:name=".Empresas_Altas"
+            android:label="@string/title_activity_empresas__altas" >
+        </activity>
+    </application>
+
+</manifest>

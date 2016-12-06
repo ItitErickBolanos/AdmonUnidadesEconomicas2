@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admonunidadeseconomicas.Sectores_Alta"
+    android:background="@drawable/bg2"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/sectoresAltaTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/sectoresAltaCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sectoresAltaTitulo"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/sectoresAltaCodigo" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/sectoresAltaNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sectoresAltaCodigo"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sectoresAltaCodigo"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/sectoresAltaNombre"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/sectoresAltaGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sectoresAltaNombre"
+        android:layout_marginTop="48dp"
+        android:text="@string/sectoresAltaGuardar" />
+
+    <Button
+        android:id="@+id/sectoresAltaCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sectoresAltaGuardar"
+        android:text="@string/sectoresAltaCancelar" />
+
+</RelativeLayout>
